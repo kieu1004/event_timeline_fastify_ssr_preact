@@ -104,12 +104,12 @@ module.exports = [
                     theme_color: "#000000",
                     icons: [
                         {
-                            src: "/assets/start-152x152.png",
+                            src: "./assets/start-152x152.png",
                             sizes: "152x152",
                             type: "image/png"
                         },
                         {
-                            src: "/assets/start.png",
+                            src: "./assets/start.png",
                             sizes: "512x512",
                             type: "image/png"
                         }
