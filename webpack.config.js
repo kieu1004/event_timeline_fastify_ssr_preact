@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const nodeExternals = require("webpack-node-externals");
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = [
     //for server
@@ -87,7 +88,29 @@ module.exports = [
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'event_timeline',
-                manifest: "manifest.json",
+            }),
+            new WebpackManifestPlugin({
+                seed: {
+                    name: "My Preact PWA",
+                    short_name: "PreactPWA",
+                    description: "A Preact Progressive Web App",
+                    start_url: "/",
+                    display: "standalone",
+                    background_color: "#ffffff",
+                    theme_color: "#000000",
+                    icons: [
+                        {
+                            src: "/assets/start-152x152.png",
+                            sizes: "152x152",
+                            type: "image/png"
+                        },
+                        {
+                            src: "/assets/start.png",
+                            sizes: "512x512",
+                            type: "image/png"
+                        }
+                    ]
+                }
             }),
         ],
         devtool: 'inline-source-map',

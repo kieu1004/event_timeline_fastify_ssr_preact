@@ -1,8 +1,6 @@
 import { hydrate } from 'preact'
 import Router from './components/Router'
 
-hydrate(Router(), document.querySelector('#root'))
-
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js', { scope: '/' })
         .then(registration => {
@@ -12,3 +10,5 @@ if ('serviceWorker' in navigator) {
             console.error('Service Worker registration failed:', error);
         });
 }
+
+hydrate(Router(), document.querySelector('#root'))
