@@ -17,7 +17,7 @@ class Home extends Component {
             this.setState({
                 job: dataJobUpdate
             });
-        }, 5000);
+        }, 10000);
     }
 
     componentWillUnmount() {
