@@ -57,7 +57,11 @@ module.exports = [
         mode: 'production',
         target: 'web',
         entry: {
-            client: "./src/client.js"
+            client: [
+                './src/client.js',
+                './src/dragDrop.js',
+                './src/dragDropTouchEvent.js'
+              ]
         },
         output: {
             path: path.resolve(__dirname, 'public'),
