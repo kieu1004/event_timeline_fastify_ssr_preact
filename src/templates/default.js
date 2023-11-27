@@ -24,8 +24,6 @@ export default (html) => `
             ${html}
         </div>
         <script type="module" src="client.js" async></script>
-        <script src="dragDrop.js"></script>
-        <script src="dragDropTouchEvent.js"></script>
     </body>
     </html>
 `
