@@ -1,7 +1,8 @@
 import { h, Component } from 'preact';
 import App from '../components/App';
 import dataJob from '../utils/data';
-import dataJobUpdate from '../utils/dataUpdate';
+import dataUpdate from '../utils/dataUpdate';
+
 
 class Home extends Component {
     constructor(props) {
@@ -13,6 +14,9 @@ class Home extends Component {
     }
 
     componentDidMount() {
+        localStorage.setItem("dataUpdate", JSON.stringify(dataUpdate));
+        const dataJobUpdate = JSON.parse(localStorage.getItem('dataUpdate'));
+
         this.timerId = setTimeout(() => {
             this.setState({
                 job: dataJobUpdate

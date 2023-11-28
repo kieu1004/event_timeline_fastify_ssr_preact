@@ -1,6 +1,5 @@
 import { h, render, Component } from 'preact';
 import logo from '../assets/clip.png'
-import dataJobUpdate from '../utils/dataUpdate'
 
 class App extends Component {
     constructor(props) {

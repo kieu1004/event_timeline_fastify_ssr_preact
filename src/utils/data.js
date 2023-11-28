@@ -4,6 +4,7 @@ import start from '../assets/start.png'
 import start152x152 from '../assets/start-152x152.png'
 import start192x192 from '../assets/start-192x192.png'
 
+
 const dataJob = [
     {
         title: 'Timeline Title heo',
