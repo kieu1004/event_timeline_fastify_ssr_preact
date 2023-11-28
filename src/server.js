@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import render from 'preact-render-to-string'
+import renderToString from 'preact-render-to-string'
 import path from 'path'
 
 import pages from './pages/index'
@@ -28,7 +28,7 @@ pages.forEach(page =>
         },
         handler: function (request, response) {
             response.header('Content-Type', 'text/html; charset=utf-8')
-            return htmlShell(render(<page.component />))
+            return htmlShell(renderToString(<page.component />))
         }
     })
 )
