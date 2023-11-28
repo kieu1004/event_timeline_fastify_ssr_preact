@@ -20,7 +20,10 @@
   ],
   "client.js": "auto/client.js",
   "assets/clip.png": "auto/assets/clip.png",
+  "assets/start.png": "auto/assets/start.png",
   "assets/more.png": "auto/assets/more.png",
   "assets/check.png": "auto/assets/check.png",
+  "assets/start-192x192.png": "auto/assets/start-192x192.png",
+  "assets/start-152x152.png": "auto/assets/start-152x152.png",
   "index.html": "auto/index.html"
 }
