@@ -14,10 +14,7 @@ self.addEventListener('install', (event) => {
         'assets/check.png',
         'assets/start-152x152.png',
         'manifest.json',
-        'dragDrop.js',
-        'dragDropTouchEvent.js',
         'index.html',
-        '/'
       ])
     })
   )
