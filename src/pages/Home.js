@@ -17,7 +17,7 @@ class Home extends Component {
         localStorage.setItem("dataUpdate", JSON.stringify(dataUpdate));
         const dataJobUpdate = JSON.parse(localStorage.getItem('dataUpdate'));
 
-        this.timerId = setTimeout(() => {
+        this.timeOutId = setTimeout(() => {
             this.setState({
                 job: dataJobUpdate
             });
@@ -25,7 +25,7 @@ class Home extends Component {
     }
 
     componentWillUnmount() {
-        clearTimeout(this.timerId);
+        clearTimeout(this.timeOutId);
     }
 
     render() {
