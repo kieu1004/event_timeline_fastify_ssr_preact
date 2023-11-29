@@ -45,3 +45,33 @@ const start = async () => {
     }
 }
 start()
+
+
+
+
+// import express from 'express';
+// import { h } from 'preact';
+// import renderToString from 'preact-render-to-string';
+// import path from 'path';
+// import pages from './pages/index';
+// import htmlShell from './templates/default';
+
+// const app = express();
+// const router = express.Router();
+
+// router.use(express.static(path.join(__dirname, '../public')));
+
+// pages.forEach(page => {
+//     router.get(page.route, (req, res) => {
+//         res.header('Content-Type', 'text/html; charset=utf-8');
+//         const html = renderToString(<page.component />);
+//         res.send(htmlShell(html));
+//     });
+// });
+
+// app.use('/', router);
+
+// const server = app.listen(3000, () => {
+//     const port = server.address().port;
+//     console.log(`Server listen at: http://localhost:${port}`);
+// });
