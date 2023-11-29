@@ -5,14 +5,27 @@ import path from 'path'
 import pages from './pages/index'
 import htmlShell from './templates/default'
 
-const fastify = require('fastify')
-const fastifyStatic = require('@fastify/static')
+
 
 // FASTIFY CONFIG
+const fastify = require('fastify')
+const fastifyStatic = require('@fastify/static')
 const app = fastify({ logger: true })
 app.register(fastifyStatic, {
     root: path.join(__dirname, '../public')
 })
+
+
+
+// //EXPRESS CONFIG
+// const express = require('express');
+// const app = express();
+// const path = require('path');
+
+// //Static Middleware
+// app.use(express.static(path.join(__dirname, '../public')))
+
+
 
 // ROUTES
 pages.forEach(page =>

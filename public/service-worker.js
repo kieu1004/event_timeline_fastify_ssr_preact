@@ -44,58 +44,7 @@ self.addEventListener('fetch', (event) => {
 let getVersionPort;
 
 //Data for update
-const dataJob = [
-  {
-    title: 'Timeline Title 1',
-    description: 'Description 1',
-    attribute: 'Attribute 1',
-    status1: 'Status1',
-    status2: 'Status2',
-    status: 'finished',
-    time: '00 Aug',
-    icon: ''
-  },
-  {
-    title: 'Timeline Title 2',
-    description: 'Description 2',
-    attribute: 'Attribute 2',
-    status1: 'Status1',
-    status2: 'Status2',
-    status: 'finished',
-    time: 'Today',
-    icon: '',
-  },
-  {
-    title: 'Timeline Title 3',
-    description: 'Description 3',
-    attribute: 'Attribute 3',
-    status1: 'Status1',
-    status2: 'Status2',
-    status: 'finished',
-    time: 'Today',
-    icon: ''
-  },
-  {
-    title: 'Timeline Title 4',
-    description: 'Description 4',
-    attribute: 'Attribute 4',
-    status1: 'Status1',
-    status2: 'Status2',
-    status: 'unfinished',
-    time: '00 Aug',
-    icon: ''
-  },
-  {
-    title: 'Timeline Title 5',
-    description: 'Description 5',
-    status1: 'Status1',
-    status2: 'Status2',
-    attribute: 'Attribute',
-    status: 'unfinished',
-    time: '00 Aug',
-    icon: ''
-  }
-]
+const dataJob = []
 // Set up channel with the same name as in app.js
 // to send a message to all tabs or windows of the application at once.
 const broadcast = new BroadcastChannel('ui-channel');
