@@ -16,17 +16,6 @@ app.register(fastifyStatic, {
 })
 
 
-
-// //EXPRESS CONFIG
-// const express = require('express');
-// const app = express();
-// const path = require('path');
-
-// //Static Middleware
-// app.use(express.static(path.join(__dirname, '../public')))
-
-
-
 // ROUTES
 pages.forEach(page =>
     app.route({
